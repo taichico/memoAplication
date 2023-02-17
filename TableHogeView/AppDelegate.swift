@@ -2,12 +2,15 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
+//    static var shared = AppDelegate()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        TableViewRouter.showRoot(window: window)
+        let vc: TableViewController = TableViewRouter.createModule()
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = vc
+        window?.makeKeyAndVisible()
         return true
     }
 

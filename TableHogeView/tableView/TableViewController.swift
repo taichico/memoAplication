@@ -1,8 +1,16 @@
 import UIKit
 
-class TableViewController: UIViewController {
+class TableViewController: UIViewController, TableViewProtocol {
+    public var presenter: TablePresenterProtocol?
     
     let fruits = ["apple", "orange", "melon", "banana", "pineapple"]
+    
+    func memoTapButton() {
+        
+    }
+    func editTapButton() {
+        
+    }
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -13,11 +21,11 @@ class TableViewController: UIViewController {
     }
     
     @IBAction func memoButtonTapped(_ sender: Any) {
-        print("memo")
+        presenter?.memoTap()
     }
     
     @IBAction func editButtonTapped(_ sender: Any) {
-        print("edit")
+        presenter?.editTap()
     }
 }
 

@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE69B1FD299B577400079C7B /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE69B1FC299B577400079C7B /* PromiseKit */; };
+		CE69B1FF299B5C2C00079C7B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69B1FE299B5C2C00079C7B /* Model.swift */; };
+		CE69B202299B605600079C7B /* MemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69B201299B605600079C7B /* MemoRouter.swift */; };
+		CE69B204299B606100079C7B /* MemoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69B203299B606100079C7B /* MemoPresenter.swift */; };
+		CE69B207299B607600079C7B /* MemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69B205299B607600079C7B /* MemoViewController.swift */; };
+		CE69B208299B607600079C7B /* MemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE69B206299B607600079C7B /* MemoViewController.xib */; };
 		CEB52B19299B23F9001D66B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B18299B23F9001D66B0 /* AppDelegate.swift */; };
 		CEB52B1B299B23F9001D66B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B1A299B23F9001D66B0 /* SceneDelegate.swift */; };
-		CEB52B1D299B23F9001D66B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B1C299B23F9001D66B0 /* ViewController.swift */; };
-		CEB52B20299B23F9001D66B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB52B1E299B23F9001D66B0 /* Main.storyboard */; };
 		CEB52B22299B23FC001D66B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB52B21299B23FC001D66B0 /* Assets.xcassets */; };
 		CEB52B25299B23FC001D66B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB52B23299B23FC001D66B0 /* LaunchScreen.storyboard */; };
 		CEB52B30299B23FC001D66B0 /* TableHogeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B2F299B23FC001D66B0 /* TableHogeViewTests.swift */; };
 		CEB52B3A299B23FC001D66B0 /* TableHogeViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B39299B23FC001D66B0 /* TableHogeViewUITests.swift */; };
 		CEB52B3C299B23FC001D66B0 /* TableHogeViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B3B299B23FC001D66B0 /* TableHogeViewUITestsLaunchTests.swift */; };
+		CEB52B4A299B2431001D66B0 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B48299B2431001D66B0 /* TableViewController.swift */; };
+		CEB52B4B299B2431001D66B0 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB52B49299B2431001D66B0 /* TableViewController.xib */; };
+		CEB52B4E299B2478001D66B0 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B4C299B2478001D66B0 /* TableViewCell.swift */; };
+		CEB52B4F299B2478001D66B0 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEB52B4D299B2478001D66B0 /* TableViewCell.xib */; };
+		CEB52B51299B2765001D66B0 /* TableViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B50299B2765001D66B0 /* TableViewRouter.swift */; };
+		CEB52B54299B515C001D66B0 /* TableViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B53299B515C001D66B0 /* TableViewPresenter.swift */; };
+		CEB52B59299B52AE001D66B0 /* TableViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB52B58299B52AE001D66B0 /* TableViewProtocols.swift */; };
+		CEB69637299B6EDB007E9E57 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB69636299B6EDB007E9E57 /* UIViewController.swift */; };
+		CEB69639299B6F33007E9E57 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB69638299B6F33007E9E57 /* AppViewController.swift */; };
+		CEB6963B299B8A75007E9E57 /* MemoViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB6963A299B8A75007E9E57 /* MemoViewProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +50,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE69B1FE299B5C2C00079C7B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		CE69B201299B605600079C7B /* MemoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRouter.swift; sourceTree = "<group>"; };
+		CE69B203299B606100079C7B /* MemoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoPresenter.swift; sourceTree = "<group>"; };
+		CE69B205299B607600079C7B /* MemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewController.swift; sourceTree = "<group>"; };
+		CE69B206299B607600079C7B /* MemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoViewController.xib; sourceTree = "<group>"; };
 		CEB52B15299B23F9001D66B0 /* TableHogeView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableHogeView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB52B18299B23F9001D66B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB52B1A299B23F9001D66B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEB52B1C299B23F9001D66B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CEB52B1F299B23F9001D66B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEB52B21299B23FC001D66B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB52B24299B23FC001D66B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB52B26299B23FC001D66B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +66,16 @@
 		CEB52B35299B23FC001D66B0 /* TableHogeViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TableHogeViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB52B39299B23FC001D66B0 /* TableHogeViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHogeViewUITests.swift; sourceTree = "<group>"; };
 		CEB52B3B299B23FC001D66B0 /* TableHogeViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableHogeViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CEB52B48299B2431001D66B0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		CEB52B49299B2431001D66B0 /* TableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
+		CEB52B4C299B2478001D66B0 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CEB52B4D299B2478001D66B0 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		CEB52B50299B2765001D66B0 /* TableViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewRouter.swift; sourceTree = "<group>"; };
+		CEB52B53299B515C001D66B0 /* TableViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPresenter.swift; sourceTree = "<group>"; };
+		CEB52B58299B52AE001D66B0 /* TableViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewProtocols.swift; sourceTree = "<group>"; };
+		CEB69636299B6EDB007E9E57 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		CEB69638299B6F33007E9E57 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
+		CEB6963A299B8A75007E9E57 /* MemoViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE69B1FD299B577400079C7B /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE69B200299B600D00079C7B /* MemoView */ = {
+			isa = PBXGroup;
+			children = (
+				CE69B201299B605600079C7B /* MemoRouter.swift */,
+				CE69B203299B606100079C7B /* MemoPresenter.swift */,
+				CE69B205299B607600079C7B /* MemoViewController.swift */,
+				CE69B206299B607600079C7B /* MemoViewController.xib */,
+			);
+			path = MemoView;
+			sourceTree = "<group>";
+		};
 		CEB52B0C299B23F9001D66B0 = {
 			isa = PBXGroup;
 			children = (
+				CE69B200299B600D00079C7B /* MemoView */,
+				CEB52B56299B5231001D66B0 /* Model */,
 				CEB52B17299B23F9001D66B0 /* TableHogeView */,
 				CEB52B2E299B23FC001D66B0 /* TableHogeViewTests */,
 				CEB52B38299B23FC001D66B0 /* TableHogeViewUITests */,
@@ -99,13 +140,14 @@
 		CEB52B17299B23F9001D66B0 /* TableHogeView */ = {
 			isa = PBXGroup;
 			children = (
+				CEB69635299B6EC4007E9E57 /* Extention */,
 				CEB52B18299B23F9001D66B0 /* AppDelegate.swift */,
 				CEB52B1A299B23F9001D66B0 /* SceneDelegate.swift */,
-				CEB52B1C299B23F9001D66B0 /* ViewController.swift */,
-				CEB52B1E299B23F9001D66B0 /* Main.storyboard */,
-				CEB52B21299B23FC001D66B0 /* Assets.xcassets */,
-				CEB52B23299B23FC001D66B0 /* LaunchScreen.storyboard */,
 				CEB52B26299B23FC001D66B0 /* Info.plist */,
+				CEB52B23299B23FC001D66B0 /* LaunchScreen.storyboard */,
+				CEB52B21299B23FC001D66B0 /* Assets.xcassets */,
+				CEB52B52299B5138001D66B0 /* tableView */,
+				CEB69638299B6F33007E9E57 /* AppViewController.swift */,
 			);
 			path = TableHogeView;
 			sourceTree = "<group>";
@@ -127,6 +169,53 @@
 			path = TableHogeViewUITests;
 			sourceTree = "<group>";
 		};
+		CEB52B52299B5138001D66B0 /* tableView */ = {
+			isa = PBXGroup;
+			children = (
+				CEB52B55299B51C4001D66B0 /* tableViewCell */,
+				CEB52B49299B2431001D66B0 /* TableViewController.xib */,
+				CEB52B48299B2431001D66B0 /* TableViewController.swift */,
+				CEB52B50299B2765001D66B0 /* TableViewRouter.swift */,
+				CEB52B53299B515C001D66B0 /* TableViewPresenter.swift */,
+			);
+			path = tableView;
+			sourceTree = "<group>";
+		};
+		CEB52B55299B51C4001D66B0 /* tableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CEB52B4C299B2478001D66B0 /* TableViewCell.swift */,
+				CEB52B4D299B2478001D66B0 /* TableViewCell.xib */,
+			);
+			path = tableViewCell;
+			sourceTree = "<group>";
+		};
+		CEB52B56299B5231001D66B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEB52B57299B5239001D66B0 /* Protocols */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEB52B57299B5239001D66B0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CE69B1FE299B5C2C00079C7B /* Model.swift */,
+				CEB52B58299B52AE001D66B0 /* TableViewProtocols.swift */,
+				CEB6963A299B8A75007E9E57 /* MemoViewProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		CEB69635299B6EC4007E9E57 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				CEB69636299B6EDB007E9E57 /* UIViewController.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +232,9 @@
 			dependencies = (
 			);
 			name = TableHogeView;
+			packageProductDependencies = (
+				CE69B1FC299B577400079C7B /* PromiseKit */,
+			);
 			productName = TableHogeView;
 			productReference = CEB52B15299B23F9001D66B0 /* TableHogeView.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +307,9 @@
 				Base,
 			);
 			mainGroup = CEB52B0C299B23F9001D66B0;
+			packageReferences = (
+				CE69B1FB299B577400079C7B /* XCRemoteSwiftPackageReference "PromiseKit" */,
+			);
 			productRefGroup = CEB52B16299B23F9001D66B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,9 +326,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEB52B4B299B2431001D66B0 /* TableViewController.xib in Resources */,
+				CEB52B4F299B2478001D66B0 /* TableViewCell.xib in Resources */,
 				CEB52B25299B23FC001D66B0 /* LaunchScreen.storyboard in Resources */,
 				CEB52B22299B23FC001D66B0 /* Assets.xcassets in Resources */,
-				CEB52B20299B23F9001D66B0 /* Main.storyboard in Resources */,
+				CE69B208299B607600079C7B /* MemoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +355,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB52B1D299B23F9001D66B0 /* ViewController.swift in Sources */,
+				CEB6963B299B8A75007E9E57 /* MemoViewProtocols.swift in Sources */,
+				CE69B207299B607600079C7B /* MemoViewController.swift in Sources */,
+				CEB52B4E299B2478001D66B0 /* TableViewCell.swift in Sources */,
+				CEB69639299B6F33007E9E57 /* AppViewController.swift in Sources */,
+				CEB69637299B6EDB007E9E57 /* UIViewController.swift in Sources */,
 				CEB52B19299B23F9001D66B0 /* AppDelegate.swift in Sources */,
+				CE69B204299B606100079C7B /* MemoPresenter.swift in Sources */,
+				CE69B202299B605600079C7B /* MemoRouter.swift in Sources */,
 				CEB52B1B299B23F9001D66B0 /* SceneDelegate.swift in Sources */,
+				CEB52B51299B2765001D66B0 /* TableViewRouter.swift in Sources */,
+				CEB52B4A299B2431001D66B0 /* TableViewController.swift in Sources */,
+				CEB52B59299B52AE001D66B0 /* TableViewProtocols.swift in Sources */,
+				CEB52B54299B515C001D66B0 /* TableViewPresenter.swift in Sources */,
+				CE69B1FF299B5C2C00079C7B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +405,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CEB52B1E299B23F9001D66B0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CEB52B1F299B23F9001D66B0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CEB52B23299B23FC001D66B0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,9 +539,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TableHogeView/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -466,9 +566,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TableHogeView/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -596,6 +696,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE69B1FB299B577400079C7B /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE69B1FC299B577400079C7B /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE69B1FB299B577400079C7B /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEB52B0D299B23F9001D66B0 /* Project object */;
 }
