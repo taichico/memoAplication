@@ -1,12 +1,14 @@
-import Foundation
-
-// 入力
-protocol SamplePresenterInput: AnyObject {
-    func tapEdit()
-    func tapMemo()
+public protocol TableViewProtocol {
+    var presenter: TablePresenterProtocol? { get set }
+    var readFile: String { get set }
+    var items: [String] { get set }
 }
-// 出力
-protocol SamplePresenterOutput: AnyObject {
-    func printMemo()
-    func printEdit()
+public protocol TablePresenterProtocol {
+    func memoTap()
+    func editTap()
+    func viewWillAppear()
+}
+public protocol TableWireframeProtocol {
+    func showMemoView()
+    func showEditView()
 }

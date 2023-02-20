@@ -19,10 +19,9 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oPn-ZF-Zph">
-                    <rect key="frame" x="76" y="239" width="240" height="119"/>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oPn-ZF-Zph">
+                    <rect key="frame" x="77" y="239" width="239" height="119"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -36,13 +35,26 @@
                         <action selector="saveButtontap:" destination="-1" eventType="touchUpInside" id="WKh-Ef-hFU"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWc-Mo-dUn">
+                    <rect key="frame" x="22" y="59" width="65" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="close"/>
+                    <connections>
+                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="UbN-4e-uia"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HWc-Mo-dUn" secondAttribute="trailing" constant="306" id="2IZ-K1-GDy"/>
                 <constraint firstItem="oPn-ZF-Zph" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="180" id="3Wq-ec-1JQ"/>
+                <constraint firstItem="oPn-ZF-Zph" firstAttribute="top" secondItem="HWc-Mo-dUn" secondAttribute="bottom" constant="145" id="FY9-ja-UPa"/>
                 <constraint firstItem="oPn-ZF-Zph" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="KIH-Pw-Deg"/>
+                <constraint firstItem="oPn-ZF-Zph" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="USc-Zs-WRj"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oPn-ZF-Zph" secondAttribute="bottom" constant="460" id="hJK-MP-jQs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oPn-ZF-Zph" secondAttribute="trailing" constant="77" id="rcY-TT-Fqq"/>
+                <constraint firstItem="HWc-Mo-dUn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="xyq-Z3-aLW"/>
             </constraints>
             <point key="canvasLocation" x="140" y="20"/>
         </view>

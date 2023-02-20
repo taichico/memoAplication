@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE4128A929A357470005F0F2 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4128A729A357470005F0F2 /* EditViewController.swift */; };
+		CE4128AA29A357470005F0F2 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE4128A829A357470005F0F2 /* EditViewController.xib */; };
+		CE4128AC29A3575D0005F0F2 /* EditRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4128AB29A3575D0005F0F2 /* EditRouter.swift */; };
+		CE4128AE29A3576C0005F0F2 /* EditPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4128AD29A3576C0005F0F2 /* EditPresenter.swift */; };
+		CE4128B029A35AB00005F0F2 /* EditViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4128AF29A35AB00005F0F2 /* EditViewProtocols.swift */; };
+		CE4128B229A363690005F0F2 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4128B129A363690005F0F2 /* FileManager.swift */; };
 		CE69B1FD299B577400079C7B /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE69B1FC299B577400079C7B /* PromiseKit */; };
 		CE69B1FF299B5C2C00079C7B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69B1FE299B5C2C00079C7B /* Model.swift */; };
 		CE69B202299B605600079C7B /* MemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE69B201299B605600079C7B /* MemoRouter.swift */; };
@@ -50,6 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE4128A729A357470005F0F2 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		CE4128A829A357470005F0F2 /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		CE4128AB29A3575D0005F0F2 /* EditRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRouter.swift; sourceTree = "<group>"; };
+		CE4128AD29A3576C0005F0F2 /* EditPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPresenter.swift; sourceTree = "<group>"; };
+		CE4128AF29A35AB00005F0F2 /* EditViewProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewProtocols.swift; sourceTree = "<group>"; };
+		CE4128B129A363690005F0F2 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
 		CE69B1FE299B5C2C00079C7B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		CE69B201299B605600079C7B /* MemoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoRouter.swift; sourceTree = "<group>"; };
 		CE69B203299B606100079C7B /* MemoPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoPresenter.swift; sourceTree = "<group>"; };
@@ -104,6 +116,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE4128A629A3572B0005F0F2 /* EditView */ = {
+			isa = PBXGroup;
+			children = (
+				CE4128A729A357470005F0F2 /* EditViewController.swift */,
+				CE4128A829A357470005F0F2 /* EditViewController.xib */,
+				CE4128AB29A3575D0005F0F2 /* EditRouter.swift */,
+				CE4128AD29A3576C0005F0F2 /* EditPresenter.swift */,
+			);
+			path = EditView;
+			sourceTree = "<group>";
+		};
 		CE69B200299B600D00079C7B /* MemoView */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +141,7 @@
 		CEB52B0C299B23F9001D66B0 = {
 			isa = PBXGroup;
 			children = (
+				CE4128A629A3572B0005F0F2 /* EditView */,
 				CE69B200299B600D00079C7B /* MemoView */,
 				CEB52B56299B5231001D66B0 /* Model */,
 				CEB52B17299B23F9001D66B0 /* TableHogeView */,
@@ -204,6 +228,7 @@
 				CE69B1FE299B5C2C00079C7B /* Model.swift */,
 				CEB52B58299B52AE001D66B0 /* TableViewProtocols.swift */,
 				CEB6963A299B8A75007E9E57 /* MemoViewProtocols.swift */,
+				CE4128AF29A35AB00005F0F2 /* EditViewProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -212,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB69636299B6EDB007E9E57 /* UIViewController.swift */,
+				CE4128B129A363690005F0F2 /* FileManager.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -326,6 +352,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4128AA29A357470005F0F2 /* EditViewController.xib in Resources */,
 				CEB52B4B299B2431001D66B0 /* TableViewController.xib in Resources */,
 				CEB52B4F299B2478001D66B0 /* TableViewCell.xib in Resources */,
 				CEB52B25299B23FC001D66B0 /* LaunchScreen.storyboard in Resources */,
@@ -357,17 +384,22 @@
 			files = (
 				CEB6963B299B8A75007E9E57 /* MemoViewProtocols.swift in Sources */,
 				CE69B207299B607600079C7B /* MemoViewController.swift in Sources */,
+				CE4128AC29A3575D0005F0F2 /* EditRouter.swift in Sources */,
 				CEB52B4E299B2478001D66B0 /* TableViewCell.swift in Sources */,
 				CEB69639299B6F33007E9E57 /* AppViewController.swift in Sources */,
 				CEB69637299B6EDB007E9E57 /* UIViewController.swift in Sources */,
+				CE4128A929A357470005F0F2 /* EditViewController.swift in Sources */,
 				CEB52B19299B23F9001D66B0 /* AppDelegate.swift in Sources */,
 				CE69B204299B606100079C7B /* MemoPresenter.swift in Sources */,
+				CE4128B229A363690005F0F2 /* FileManager.swift in Sources */,
 				CE69B202299B605600079C7B /* MemoRouter.swift in Sources */,
+				CE4128B029A35AB00005F0F2 /* EditViewProtocols.swift in Sources */,
 				CEB52B1B299B23F9001D66B0 /* SceneDelegate.swift in Sources */,
 				CEB52B51299B2765001D66B0 /* TableViewRouter.swift in Sources */,
 				CEB52B4A299B2431001D66B0 /* TableViewController.swift in Sources */,
 				CEB52B59299B52AE001D66B0 /* TableViewProtocols.swift in Sources */,
 				CEB52B54299B515C001D66B0 /* TableViewPresenter.swift in Sources */,
+				CE4128AE29A3576C0005F0F2 /* EditPresenter.swift in Sources */,
 				CE69B1FF299B5C2C00079C7B /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

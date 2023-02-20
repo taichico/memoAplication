@@ -3,7 +3,7 @@ import UIKit
 final class TableViewPresenter: TablePresenterProtocol {
     private var view: TableViewProtocol?
     private let router: TableWireframeProtocol
-
+    
     /// コンストラクタ
     public init(interface: TableViewProtocol, router: TableWireframeProtocol) {
         self.view = interface
@@ -11,24 +11,16 @@ final class TableViewPresenter: TablePresenterProtocol {
     }
     
     func memoTap() {
-        router.showInFlightWiFi()
+        router.showMemoView()
         print("show")
     }
     
     func editTap() {
-        print("tttt")
+        router.showEditView()
     }
-}
 
-public protocol TableViewProtocol {
-    var presenter: TablePresenterProtocol? { get set }
-    func memoTapButton()
-    func editTapButton()
-}
-public protocol TablePresenterProtocol {
-    func memoTap()
-    func editTap()
-}
-public protocol TableWireframeProtocol {
-    func showInFlightWiFi()
+    func viewWillAppear() {
+        print(FileManager.default.readingFile(), "taichico")
+        view?.readFile = FileManager.default.readingFile() ?? ""
+    }
 }

@@ -1,9 +1,11 @@
-import Foundation
-
-// 入力
-protocol MemoPresenterInput: AnyObject {
+public protocol MemoViewProtocol {
+    func close()
 }
+public protocol MemoPresenterProtocol {
+    func saveButtonTapped(str: String)
+    func closeButtonTapped()
 
-// 出力
-protocol MemoPresenterOutput: AnyObject {
+}
+public protocol MemoWireframeProtocol {
+
 }

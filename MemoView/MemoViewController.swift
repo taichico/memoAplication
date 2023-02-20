@@ -8,12 +8,33 @@ class MemoViewController: UIViewController, MemoViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .blue
+        textView.delegate = self
+        setupView()
     }
     
     
     @IBAction func saveButtontap(_ sender: Any) {
+        presenter?.saveButtonTapped(str: textView.text)
+    }
+    
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        print("tototototo")
+        presenter?.closeButtonTapped()
+    }
+    
+    func close() {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+
+}
+
+
+extension MemoViewController: UITextViewDelegate {
+    private func setupView() {
+        textView.backgroundColor = .gray
+    }
+    func textViewDidChange(_ textView: UITextView) {
         
     }
 }

@@ -10,26 +10,15 @@ final class MemoViewPresenter: MemoPresenterProtocol {
         self.view = interface
         self.router = router
     }
+    
+    func saveButtonTapped(str: String) {
+        FileManager.default.createFile()
+        FileManager.default.appendText(string: str)
+        print("save", str)
+    }
+    
+    func closeButtonTapped() {
+        view?.close()
+        print("閉じる")
+    }
 }
-
-
-// PresenterはInputプロトコルに準拠し、入力処理を受け付ける
-extension MemoViewPresenter: MemoPresenterInput {
-}
-
-extension TableViewController: MemoPresenterOutput {
-}
-
-
-public protocol MemoViewProtocol {
-
-}
-public protocol MemoPresenterProtocol {
-
-}
-public protocol MemoWireframeProtocol {
-
-}
-
-
-

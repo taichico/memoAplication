@@ -3,14 +3,8 @@ import UIKit
 class TableViewController: UIViewController, TableViewProtocol {
     public var presenter: TablePresenterProtocol?
     
-    let fruits = ["apple", "orange", "melon", "banana", "pineapple"]
-    
-    func memoTapButton() {
-        
-    }
-    func editTapButton() {
-        
-    }
+    var readFile: String = ""
+    var items: [String] = []
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
@@ -18,6 +12,11 @@ class TableViewController: UIViewController, TableViewProtocol {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        presenter?.viewWillAppear()
+        items = readFile.components(separatedBy: "\n")
+        print("readFIle", readFile)
     }
     
     @IBAction func memoButtonTapped(_ sender: Any) {
@@ -31,12 +30,12 @@ class TableViewController: UIViewController, TableViewProtocol {
 
 extension TableViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruits.count
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
-        cell.label.text = fruits[indexPath.row]
+        cell.label.text = items[indexPath.row]
         return cell
     }
     

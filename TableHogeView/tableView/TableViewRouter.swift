@@ -15,34 +15,17 @@ final class TableViewRouter: TableWireframeProtocol {
         return view
     }
     
-    public func showInFlightWiFi() {
+    public func showMemoView() {
         let vc = MemoRouter.createLaunchProcessModule()
-        //ここがnilになる
-        viewController?.navigationController?.pushViewController(vc, animated: true)
-        print(viewController, vc, viewController?.navigationController?.pushViewController(vc, animated: true), "hogehoge")
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        viewController?.present(nav, animated: true, completion: nil)
     }
-
-//    /// 機内Wi-Fi画面を開く
-//     public func memoView() {
-//         print("処理")
-//        let vc = MemoViewController()
-//        viewController.navigationController?.pushViewController(vc, animated: true)
-//         print(viewController, vc, viewController.navigationController?.pushViewController(vc, animated: true), "hgoehoge")
-//    }
+    
+    public func showEditView() {
+        let vc = EditRouter.createLaunchProcessModule()
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .fullScreen
+        viewController?.present(nav, animated: true, completion: nil)
+    }
 }
-
-
-
-
-
-//
-//    public func showLocusLabs(_ venueId: String) {
-//        let vc = UIStoryboard(name: "TableViewController", bundle: Bundle.main).instantiateInitialViewController()!
-//        let locusVc = vc as? LocusLabsViewProtocol
-//        locusVc?.setView(venueId)
-//        viewController?.navigationController?.pushViewController(vc, animated: true)
-//    }
-
-//        tableViewController?.present(memoVC, animated: true, completion: nil)
-//        vc.appViewController?.setCurrentViewController(memoVC, animated: true)
-//        print(vc, vc.appViewController, "hogehoge")

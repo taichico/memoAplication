@@ -7,7 +7,6 @@ public final class MemoRouter: MemoWireframeProtocol {
          let presenter = MemoViewPresenter(interface: view, router: router)
          view.presenter = presenter
          router.viewController = view
-         presenter
          return view
     }
 }
