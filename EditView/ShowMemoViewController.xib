@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditViewController" customModule="TableHogeView" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowMemoViewController" customModule="TableHogeView" customModuleProvider="target">
             <connections>
                 <outlet property="textLabel" destination="EPW-xm-cQs" id="2zf-7j-t2A"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOY-n1-RIl">
-                    <rect key="frame" x="20" y="79" width="78" height="34.333333333333343"/>
+                    <rect key="frame" x="20" y="79" width="103" height="34.333333333333343"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="CLOSE"/>
                     <connections>
@@ -38,9 +38,10 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="EPW-xm-cQs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5PT-u5-vzM"/>
-                <constraint firstItem="DOY-n1-RIl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="p8o-lM-08a"/>
+                <constraint firstItem="DOY-n1-RIl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="SLN-DA-4f7"/>
+                <constraint firstItem="DOY-n1-RIl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="TgX-9i-JKG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DOY-n1-RIl" secondAttribute="trailing" constant="270" id="iQG-MB-YmJ"/>
                 <constraint firstItem="EPW-xm-cQs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xKh-zb-XRY"/>
-                <constraint firstItem="DOY-n1-RIl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="yLO-TJ-7Cn"/>
             </constraints>
             <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
         </view>

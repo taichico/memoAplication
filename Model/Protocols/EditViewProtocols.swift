@@ -1,12 +1,12 @@
-public protocol EditViewProtocol {
+public protocol ShowMemoViewProtocol {
     var text: String { get set }
     func closeButtonTapped()
 }
-public protocol EditPresenterProtocol {
+public protocol ShowMemoPresenterProtocol {
     func closeButtonTapped()
     func viewWillAppear()
 
 }
-public protocol EditWireframeProtocol {
+public protocol ShowMemoWireframeProtocol {
 
 }

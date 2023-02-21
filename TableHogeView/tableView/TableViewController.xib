@@ -27,6 +27,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                         <items>
                             <navigationItem title="Title" id="qQj-6R-g0f">
+                                <barButtonItem key="leftBarButtonItem" title="edit" id="ZcN-2I-igH">
+                                    <connections>
+                                        <action selector="editButtonTapped:" destination="-1" id="kiy-Ah-SA5"/>
+                                    </connections>
+                                </barButtonItem>
                                 <barButtonItem key="rightBarButtonItem" title="memo" id="4Uk-NP-yxi">
                                     <connections>
                                         <action selector="memoButtonTapped:" destination="-1" id="3Gv-oJ-6We"/>

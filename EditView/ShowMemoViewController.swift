@@ -1,6 +1,6 @@
 import UIKit
 
-class EditViewController: UIViewController, EditViewProtocol, UIGestureRecognizerDelegate {
+class ShowMemoViewController: UIViewController, ShowMemoViewProtocol, UIGestureRecognizerDelegate {
 
     public var presenter: EditViewPresenter?
     @IBOutlet weak var textLabel: UILabel!

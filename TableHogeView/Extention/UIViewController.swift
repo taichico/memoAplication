@@ -1,7 +1,7 @@
 import UIKit
 import SafariServices
 
-public extension UIViewController {
+public extension UIViwController {
 
     /// self を Container ViewController に追加する.
     ///
