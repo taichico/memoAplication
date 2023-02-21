@@ -116,7 +116,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE4128A629A3572B0005F0F2 /* EditView */ = {
+		CE4128A629A3572B0005F0F2 /* ShowMemoView */ = {
 			isa = PBXGroup;
 			children = (
 				CE4128A729A357470005F0F2 /* ShowMemoViewController.swift */,
@@ -124,7 +124,7 @@
 				CE4128AB29A3575D0005F0F2 /* ShowMemoRouter.swift */,
 				CE4128AD29A3576C0005F0F2 /* ShowMemoPresenter.swift */,
 			);
-			path = EditView;
+			path = ShowMemoView;
 			sourceTree = "<group>";
 		};
 		CE4128B529A4C6AF0005F0F2 /* Managers */ = {
@@ -149,7 +149,7 @@
 		CEB52B0C299B23F9001D66B0 = {
 			isa = PBXGroup;
 			children = (
-				CE4128A629A3572B0005F0F2 /* EditView */,
+				CE4128A629A3572B0005F0F2 /* ShowMemoView */,
 				CE69B200299B600D00079C7B /* MemoView */,
 				CEB52B56299B5231001D66B0 /* Model */,
 				CEB52B17299B23F9001D66B0 /* TableHogeView */,
