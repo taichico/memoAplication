@@ -5,7 +5,7 @@ public protocol TableViewProtocol {
 }
 public protocol TablePresenterProtocol {
     func memoTap()
-    func editTap()
+    func cellTap(text: String)
     func viewWillAppear()
 }
 public protocol TableWireframeProtocol {

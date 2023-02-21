@@ -4,6 +4,7 @@ class MemoViewController: UIViewController, MemoViewProtocol {
 
     public var presenter: MemoViewPresenter?
     
+    
     @IBOutlet weak var textView: UITextView!
     
     override func viewDidLoad() {
@@ -12,14 +13,11 @@ class MemoViewController: UIViewController, MemoViewProtocol {
         setupView()
     }
     
-    
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        presenter?.closeButtonTapped()
+    }
     @IBAction func saveButtontap(_ sender: Any) {
         presenter?.saveButtonTapped(str: textView.text)
-    }
-    
-    @IBAction func closeButtonTapped(_ sender: Any) {
-        print("tototototo")
-        presenter?.closeButtonTapped()
     }
     
     func close() {

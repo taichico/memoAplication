@@ -10,53 +10,60 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MemoViewController" customModule="TableHogeView" customModuleProvider="target">
             <connections>
-                <outlet property="textView" destination="oPn-ZF-Zph" id="bJq-WZ-kfy"/>
-                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="textView" destination="Ve1-j0-PPm" id="5D3-4h-Erb"/>
+                <outlet property="view" destination="jiW-m7-EP6" id="c4K-vj-gCt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+        <view contentMode="scaleToFill" ambiguous="YES" id="jiW-m7-EP6">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="oPn-ZF-Zph">
-                    <rect key="frame" x="77" y="239" width="239" height="119"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ooj-oC-Rft">
+                    <rect key="frame" x="15" y="79" width="70" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Ia0-ej-oQh"/>
+                        <constraint firstAttribute="width" constant="70" id="pa7-vE-tah"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="close"/>
+                    <connections>
+                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="sbT-WF-nfz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9BM-Tv-8Na">
+                    <rect key="frame" x="167" y="597" width="59" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="save"/>
+                    <connections>
+                        <action selector="saveButtontap:" destination="-1" eventType="touchUpInside" id="oLx-hf-nLl"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Ve1-j0-PPm">
+                    <rect key="frame" x="243" y="169" width="150" height="300"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="KQd-C9-8qX"/>
+                        <constraint firstAttribute="height" constant="300" id="sQa-JR-iW3"/>
+                    </constraints>
                     <color key="textColor" systemColor="labelColor"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                 </textView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rmK-xA-beZ">
-                    <rect key="frame" x="159" y="569" width="75" height="35"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                    <connections>
-                        <action selector="saveButtontap:" destination="-1" eventType="touchUpInside" id="WKh-Ef-hFU"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWc-Mo-dUn">
-                    <rect key="frame" x="22" y="59" width="65" height="35"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="close"/>
-                    <connections>
-                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="UbN-4e-uia"/>
-                    </connections>
-                </button>
             </subviews>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="ROK-fm-UK4"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="HWc-Mo-dUn" secondAttribute="trailing" constant="306" id="2IZ-K1-GDy"/>
-                <constraint firstItem="oPn-ZF-Zph" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="180" id="3Wq-ec-1JQ"/>
-                <constraint firstItem="oPn-ZF-Zph" firstAttribute="top" secondItem="HWc-Mo-dUn" secondAttribute="bottom" constant="145" id="FY9-ja-UPa"/>
-                <constraint firstItem="oPn-ZF-Zph" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="KIH-Pw-Deg"/>
-                <constraint firstItem="oPn-ZF-Zph" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="77" id="USc-Zs-WRj"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oPn-ZF-Zph" secondAttribute="bottom" constant="460" id="hJK-MP-jQs"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oPn-ZF-Zph" secondAttribute="trailing" constant="77" id="rcY-TT-Fqq"/>
-                <constraint firstItem="HWc-Mo-dUn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="22" id="xyq-Z3-aLW"/>
+                <constraint firstItem="Ooj-oC-Rft" firstAttribute="leading" secondItem="ROK-fm-UK4" secondAttribute="leading" constant="15" id="7QX-XN-pSH"/>
+                <constraint firstItem="Ve1-j0-PPm" firstAttribute="leading" secondItem="ROK-fm-UK4" secondAttribute="leading" constant="15" id="HEP-xR-Rhc"/>
+                <constraint firstItem="Ve1-j0-PPm" firstAttribute="top" secondItem="Ooj-oC-Rft" secondAttribute="bottom" constant="50" id="NXz-B2-zuS"/>
+                <constraint firstItem="ROK-fm-UK4" firstAttribute="trailing" secondItem="Ve1-j0-PPm" secondAttribute="trailing" id="PxQ-QL-K5m"/>
+                <constraint firstItem="Ve1-j0-PPm" firstAttribute="trailing" secondItem="ROK-fm-UK4" secondAttribute="trailing" constant="15" id="gg8-Yy-P5E"/>
+                <constraint firstItem="Ooj-oC-Rft" firstAttribute="top" secondItem="ROK-fm-UK4" secondAttribute="top" constant="20" id="pBp-8v-rsp"/>
+                <constraint firstAttribute="trailing" secondItem="Ve1-j0-PPm" secondAttribute="trailing" constant="15" id="um8-nZ-f8V"/>
             </constraints>
-            <point key="canvasLocation" x="140" y="20"/>
+            <point key="canvasLocation" x="-154.96183206106869" y="107.74647887323944"/>
         </view>
     </objects>
     <resources>

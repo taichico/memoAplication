@@ -1,6 +1,6 @@
 import UIKit
 
-class TableViewController: UIViewController, TableViewProtocol {
+class TableViewController: UIViewController, TableViewProtocol, UIGestureRecognizerDelegate {
     public var presenter: TablePresenterProtocol?
     
     var readFile: String = ""
@@ -16,15 +16,11 @@ class TableViewController: UIViewController, TableViewProtocol {
     override func viewWillAppear(_ animated: Bool) {
         presenter?.viewWillAppear()
         items = readFile.components(separatedBy: "\n")
-        print("readFIle", readFile)
+        tableView.reloadData()
     }
     
     @IBAction func memoButtonTapped(_ sender: Any) {
         presenter?.memoTap()
-    }
-    
-    @IBAction func editButtonTapped(_ sender: Any) {
-        presenter?.editTap()
     }
 }
 
@@ -39,4 +35,12 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        print(items[indexPath.row])
+        presenter?.cellTap(text: items[indexPath.row])
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
 }

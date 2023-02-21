@@ -3,6 +3,7 @@ import UIKit
 final class TableViewPresenter: TablePresenterProtocol {
     private var view: TableViewProtocol?
     private let router: TableWireframeProtocol
+    public var tableViewDataProtocol: TableViewDataProtocol!
     
     /// コンストラクタ
     public init(interface: TableViewProtocol, router: TableWireframeProtocol) {
@@ -12,15 +13,14 @@ final class TableViewPresenter: TablePresenterProtocol {
     
     func memoTap() {
         router.showMemoView()
-        print("show")
     }
     
-    func editTap() {
+    func cellTap(text: String) {
         router.showEditView()
+        tableViewDataProtocol.tableData(text: text)
     }
 
     func viewWillAppear() {
-        print(FileManager.default.readingFile(), "taichico")
         view?.readFile = FileManager.default.readingFile() ?? ""
     }
 }

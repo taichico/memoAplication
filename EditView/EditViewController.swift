@@ -1,15 +1,26 @@
 import UIKit
 
-class EditViewController: UIViewController, EditViewProtocol {
+class EditViewController: UIViewController, EditViewProtocol, UIGestureRecognizerDelegate {
 
     public var presenter: EditViewPresenter?
-    
+    @IBOutlet weak var textLabel: UILabel!
+    var text = ""
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .brown
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        presenter?.viewWillAppear()
+        textLabel.text = text
+    }
+
+    @IBAction func closeButtonTapped(_ sender: Any) {
+        presenter?.closeButtonTapped()
     }
     
-    @IBAction func editButtonTapped(_ sender: Any) {
+    func closeButtonTapped() {
+        self.dismiss(animated: true)
     }
-    
 }

@@ -7,6 +7,7 @@ public final class EditRouter: EditWireframeProtocol {
          let presenter = EditViewPresenter(interface: view, router: router)
          view.presenter = presenter
          router.viewController = view
+         presenter.tableViewDataProtocol = TableViewData.shared
          return view
     }
 }

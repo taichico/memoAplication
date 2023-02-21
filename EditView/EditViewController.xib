@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditViewController" customModule="TableHogeView" customModuleProvider="target">
             <connections>
+                <outlet property="textLabel" destination="EPW-xm-cQs" id="2zf-7j-t2A"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,22 +19,30 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ics-ck-tCb">
-                    <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOY-n1-RIl">
+                    <rect key="frame" x="20" y="79" width="78" height="34.333333333333343"/>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="CLOSE"/>
                     <connections>
-                        <action selector="editButtonTapped:" destination="-1" eventType="touchUpInside" id="gTf-vM-Of5"/>
+                        <action selector="closeButtonTapped:" destination="-1" eventType="touchUpInside" id="g22-5e-DSD"/>
                     </connections>
                 </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPW-xm-cQs">
+                    <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Ics-ck-tCb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="d5g-8q-WUl"/>
-                <constraint firstItem="Ics-ck-tCb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="oYE-Jz-gp9"/>
+                <constraint firstItem="EPW-xm-cQs" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="5PT-u5-vzM"/>
+                <constraint firstItem="DOY-n1-RIl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="p8o-lM-08a"/>
+                <constraint firstItem="EPW-xm-cQs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="xKh-zb-XRY"/>
+                <constraint firstItem="DOY-n1-RIl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="yLO-TJ-7Cn"/>
             </constraints>
-            <point key="canvasLocation" x="140" y="20"/>
+            <point key="canvasLocation" x="139.69465648854961" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>

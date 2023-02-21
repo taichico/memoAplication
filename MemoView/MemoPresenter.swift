@@ -14,11 +14,9 @@ final class MemoViewPresenter: MemoPresenterProtocol {
     func saveButtonTapped(str: String) {
         FileManager.default.createFile()
         FileManager.default.appendText(string: str)
-        print("save", str)
     }
     
     func closeButtonTapped() {
         view?.close()
-        print("閉じる")
     }
 }

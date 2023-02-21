@@ -12,6 +12,7 @@ final class TableViewRouter: TableWireframeProtocol {
         let presenter = TableViewPresenter(interface: view, router: router)
         view.presenter = presenter
         router.viewController = view
+        presenter.tableViewDataProtocol = TableViewData.shared
         return view
     }
     
@@ -28,4 +29,21 @@ final class TableViewRouter: TableWireframeProtocol {
         nav.modalPresentationStyle = .fullScreen
         viewController?.present(nav, animated: true, completion: nil)
     }
+}
+
+public class TableViewData: TableViewDataProtocol {
+    
+    public static let shared = TableViewData()
+    
+    var str: String = "hoge"
+    
+    func tableData(text: String) {
+        str = text
+    }
+    
+}
+
+protocol TableViewDataProtocol {
+    func tableData(text: String)
+    var str: String { get }
 }
